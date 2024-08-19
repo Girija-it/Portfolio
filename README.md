@@ -8,5 +8,5 @@
 
 💙 
 
-![preview img](/preview.png)
+![preview img](/assets/img/project4.png)
 

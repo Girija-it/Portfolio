@@ -2,12 +2,12 @@
   /* Colors
   ____________________*/
   --color-primary: #00606b;
-  --color-primary-dark: #9f9f9f;
-  --color-bg-primary: #d3ecf5;
+  --color-primary-dark: #000000;
+  --color-bg-primary: #07222c;
   --color-bg-secondary: #48a9b0;
-  --color-bg-footer: #61a0b1;
-  --color-white: #081a81;
-  --color-text: #1429b7;
+  --color-bg-footer: #ddf6fd;
+  --color-white: #fbfcff;
+  --color-text: #f6f6f9;
   --color-border: #373737;
 
   /* Font & Typography
@@ -203,7 +203,7 @@ body {
 .nav__brand {
   font-size: var(--fs-lg);
   font-weight: var(--fw-bold);
-  color: var(--color-primary);
+  color: var(--color-white);
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
@@ -338,7 +338,7 @@ body {
 /* About
 --------------------------------------------------------------*/
 .about__content {
-  max-width: 50rem;
+  max-width: 100rem;
   margin: auto;
   margin-bottom: 2rem;
   text-align: center;
@@ -371,6 +371,7 @@ body {
 }
 
 .skills__content {
+  width: 80%;
   background-color: var(--color-bg-secondary);
   box-shadow: var(--box-shadow);
   padding: 3rem;
@@ -416,6 +417,7 @@ body {
 
 .qualification__description {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .qualification__date {
@@ -425,7 +427,6 @@ body {
 
 .qualification__footer {
   border-top: 1px solid var(--color-border);
-  margin-top: 10rem;
   padding-top: 4rem;
   text-align: center;
 }
@@ -598,6 +599,8 @@ body {
 .footer__title {
   font-size: var(--fs-lg);
   margin-bottom: 2rem;
+  color: var(--color-primary-dark);
+
 }
 
 .footer__social-list {
@@ -607,13 +610,13 @@ body {
 
 .footer__social-link {
   font-size: 2rem;
-  color: var(--color-white);
+  color: var(--color-primary-dark);
   transition: var(--transition);
 }
 
 .footer__contact {
   font-size: var(--fs-lg);
-  color: var(--color-white);
+  color: var(--color-primary-dark);
   font-weight: var(--fw-bold);
   text-decoration: underline;
   transition: var(--transition);
@@ -621,7 +624,7 @@ body {
 
 .footer__social-link:hover,
 .footer__contact:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 .footer__copyright {
@@ -709,9 +712,7 @@ body {
 /* Large devices */
 
 @media screen and (min-width: 968px) {
-  .about__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
 
   .about__content {
     margin: 0;
